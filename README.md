@@ -11,6 +11,7 @@ tgpt is a cross-platform command-line interface (CLI) tool that allows you to us
 ### Currently available providers: 
 - [OpenGPTs](https://opengpts-example-vz4y4ooboq-uc.a.run.app/) (GPT-3.5-turbo)
 - [KoboldAI](https://koboldai-koboldcpp-tiefighter.hf.space/)  (koboldcpp/HF_SPACE_Tiefighter-13B)
+- [Brave Leo](https://brave.com/leo/) (llama-2-13b-chat)
 - [Phind](https://www.phind.com/agent) (Phind Model)
 <!-- - [Llama2](https://www.llama2.ai/) (Llama 2 70b) -->
 - [Blackbox AI](https://www.blackbox.ai/) (Blackbox model)
@@ -49,7 +50,7 @@ Options:
 
 Providers:
 The default provider is phind. The AI_PROVIDER environment variable can be used to specify a different provider.
-Available providers to use: openai, opengpts, koboldai, phind, blackboxai, ollama and groq
+Available providers to use: openai, opengpts, koboldai, leo, phind, blackboxai, ollama and groq
 
 Provider: openai
 Needs API key to work and supports various models. Recognizes the OPENAI_API_KEY and OPENAI_MODEL environment variables.
@@ -59,6 +60,9 @@ Uses gpt-3.5-turbo only. Do not use with sensitive data
 
 Provider: koboldai
 Uses koboldcpp/HF_SPACE_Tiefighter-13B only, answers from novels
+
+Provider: leo
+Supports personal API Key and custom models
 
 Provider: phind
 Uses Phind Model. Great for developers

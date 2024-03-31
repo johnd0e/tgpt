@@ -482,7 +482,7 @@ func showHelpMessage() {
 
 	boldBlue.Println("\nProviders:")
 	fmt.Println("The default provider is phind. The AI_PROVIDER environment variable can be used to specify a different provider.")
-	fmt.Println("Available providers to use: openai, opengpts, koboldai, phind, blackboxai, ollama and groq")
+	fmt.Println("Available providers to use: openai, opengpts, koboldai, leo, phind, blackboxai, ollama and groq")
 
 	bold.Println("\nProvider: openai")
 	fmt.Println("Needs API key to work and supports various models. Recognizes the OPENAI_API_KEY and OPENAI_MODEL environment variables.")
@@ -492,6 +492,9 @@ func showHelpMessage() {
 
 	bold.Println("\nProvider: koboldai")
 	fmt.Println("Uses koboldcpp/HF_SPACE_Tiefighter-13B only, answers from novels")
+
+	bold.Println("\nProvider: leo")
+	fmt.Println("Supports personal API Key and custom models.")
 
 	bold.Println("\nProvider: phind")
 	fmt.Println("Uses Phind Model. Great for developers")
